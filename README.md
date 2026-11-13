@@ -41,7 +41,7 @@ NetGuard-Pro/
 ## Installation
 
 ```powershell
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/kunal1234k/netguard-pro-MRIEM.git
 cd NetGuard-Pro
 py -m venv .venv
 .venv\Scripts\activate
