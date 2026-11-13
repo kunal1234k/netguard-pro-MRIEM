@@ -1,0 +1,3 @@
+# NetGuard Pro dependencies
+# psutil is used to read the operating system's TCP connection table.
+psutil>=5.9.0,<8.0.0
