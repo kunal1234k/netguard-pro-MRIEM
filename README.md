@@ -49,34 +49,34 @@ py -m pip install -r requirements.txt
 ```
 
 ```kali
-# Step 1: Repository folder open
-cd ~/netguard-pro-MRTEM
 
-# Step 2: Install Python requirements
+# 1. Home directory में जाओ
+cd ~
+
+# 2. Git install/check
 sudo apt update
-sudo apt install -y python3 python3-venv python3-pip
+sudo apt install -y git python3 python3-pip python3-venv
 
-# Step 3: Create virtual environment
+# 3. GitHub से project clone करो
+git clone https://github.com/kunal1234k/netguard-pro-MRIEM.git
+
+# 4. Project directory में जाओ
+cd netguard-pro-MRIEM
+
+# 5. Files verify करो
+ls -la
+
+# 6. Virtual environment बनाओ
 python3 -m venv .venv
 
-# Step 4: Activate virtual environment
+# 7. Virtual environment activate करो
 source .venv/bin/activate
 
-# Step 5: Upgrade pip
-python -m pip install --upgrade pip
-
-# Step 6: Install project dependencies
+# 8. Dependencies install करो
 python -m pip install -r requirements.txt
 
-# Step 7: Start NetGuard Pro
+# 9. NetGuard Pro start करो
 python main.py
-
-## Run
-
-Open PowerShell or Command Prompt. For firewall rule management, run the terminal as **Administrator**:
-
-```powershell
-py main.py
 ```
 
 The startup banner displays the project author, teacher, and institution. The TCP connection monitor starts in the background. Port scanning is performed when selected from the menu; it is not repeatedly run without operator action.
