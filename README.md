@@ -48,6 +48,29 @@ py -m venv .venv
 py -m pip install -r requirements.txt
 ```
 
+```kali
+# Step 1: Repository folder open
+cd ~/netguard-pro-MRTEM
+
+# Step 2: Install Python requirements
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip
+
+# Step 3: Create virtual environment
+python3 -m venv .venv
+
+# Step 4: Activate virtual environment
+source .venv/bin/activate
+
+# Step 5: Upgrade pip
+python -m pip install --upgrade pip
+
+# Step 6: Install project dependencies
+python -m pip install -r requirements.txt
+
+# Step 7: Start NetGuard Pro
+python main.py
+
 ## Run
 
 Open PowerShell or Command Prompt. For firewall rule management, run the terminal as **Administrator**:
